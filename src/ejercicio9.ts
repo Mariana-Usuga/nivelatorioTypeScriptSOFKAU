@@ -25,5 +25,10 @@ function imprimirArbol(n: number){
     }
     console.log(espacios, estrellas)
   }
+  let base = ''
+  for(let j = 0; j < n - 2; j++){
+    base += ' '
+  }    
+    console.log(base,"***")
 }
-imprimirArbol(5)
+imprimirArbol(6)

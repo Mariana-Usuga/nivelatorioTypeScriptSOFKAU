@@ -5,7 +5,7 @@
 function potencia(base: number, exponente:number): number{
   let potencia = 1
   for(let i = 0; i< exponente; i++){
-    potencia = potencia * base;
+    potencia *= base;
 }
 return potencia
 }

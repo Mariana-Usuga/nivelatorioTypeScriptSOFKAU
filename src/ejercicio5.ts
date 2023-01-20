@@ -29,8 +29,8 @@ interface FiguraGeometrica {
   calcularPerimetro: () => void
 }
 
-class Figura implements FiguraGeometrica{
-  nombre: string
+abstract class Figura implements FiguraGeometrica{
+  protected nombre: string
 
   constructor(nombre: string){
     this.nombre = nombre
@@ -92,9 +92,9 @@ class CrearFiguras{
 }
 
 const circulo = new CrearFiguras()
-circulo.crear('circulo', 'circulo', 8).calcularArea()
-circulo.crear('circulo', 'circulo', 8).calcularPerimetro()
+circulo.crear('ci1', 'circulo', 8).calcularArea()
+circulo.crear('ci2', 'circulo', 8).calcularPerimetro()
 
 const cuadrado = new CrearFiguras()
-cuadrado.crear('cuadrado', '', 8).calcularArea()
-cuadrado.crear('cuadrado', '', 8).calcularPerimetro()
+cuadrado.crear('cu1', 'cuadrado', 8).calcularArea()
+cuadrado.crear('cu2', 'cuadrado', 8).calcularPerimetro()
